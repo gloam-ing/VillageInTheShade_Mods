@@ -9,6 +9,9 @@ Village_Save_Backups/
 .zig-cache/
 .zig-global/
 
+# 暂不发布的 Mod
+ObjectMove/
+
 # 游戏数据（不要上传）
 data/
 data.dat
