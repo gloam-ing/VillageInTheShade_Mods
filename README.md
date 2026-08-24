@@ -1,5 +1,7 @@
 # Village in the Shade 静谧田园 Mod 合集
 
+> [English](README_EN.md)
+
 《静谧田园 / Village in the Shade》个人 Mod 集合，基于
 `VillageModLoader`（dll 注入框架）运行。
 
