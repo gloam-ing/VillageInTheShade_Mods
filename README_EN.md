@@ -21,7 +21,7 @@ built on the `VillageModLoader` DLL-injection framework.
 | MineHelper | v1.0.0 | Mine helper (floor / stone counter / fast-hole mode) |
 | AutoPet | v0.2.0 | Daily auto-petting for livestock & pets, affinity multiplier |
 | BirthdayReminder | v0.1.0 | Reminds you of today's birthday villager and their loved gifts |
-| HuntOneShot | v0.1.1 | One-shot hunting kills |
+| HuntOneShot | v0.1.2 | One-shot hunting kills (precise matching; fixed stamina not recovering after sleep) |
 | TimeFreeze | v0.1.0 | Freeze time during the late night |
 | Simplified Chinese Patch | v1.0.0 | Converts Traditional Chinese texts to Simplified (~54k entries); requires replacing game `data.dat` |
 
