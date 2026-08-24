@@ -1,4 +1,4 @@
-Village Mod Loader v1.0.0
+Village Mod Loader v1.0.1
 =========================
 A lightweight mod loader for Village in the Shade (Steam).
 
@@ -9,6 +9,9 @@ What it does
   subfolders) before the game fully initializes.
 - Resumes the game and prints an injection report to the console
   window (per-module OK / FAILED plus totals).
+- Injects a built-in crash reporter first; if the game crashes, it writes
+  `crash.log` (exception code, faulting module+offset, registers, stack) in
+  the game root.
 - Does not modify any game files.
 
 Requirements
@@ -19,12 +22,12 @@ Requirements
 
 Installation
 ------------
-1. Put VillageModLoader_v1.0.0.exe in the game's Mods folder.
+1. Put VillageModLoader_v1.0.1.exe in the game's Mods folder.
 2. Place compatible mod .dll files in Mods\<modname>\,
    one subfolder per mod.
 3. In Steam, right-click the game -> Properties -> Launch Options,
    and enter:
-     "D:\Steam\steamapps\common\Village in the Shade\Mods\VillageModLoader_v1.0.0.exe" %command%
+     "D:\Steam\steamapps\common\Village in the Shade\Mods\VillageModLoader_v1.0.1.exe" %command%
    (adjust the path to your own game install location)
 4. Launch the game normally from Steam.
 
@@ -35,7 +38,7 @@ Uninstallation
 
 Files in this package
 ---------------------
-- VillageModLoader_v1.0.0.exe - the loader itself
+- VillageModLoader_v1.0.1.exe - the loader itself (with built-in crash log)
 
 Notes
 -----

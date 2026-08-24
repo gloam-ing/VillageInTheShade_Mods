@@ -15,7 +15,7 @@ built on the `VillageModLoader` DLL-injection framework.
 
 | Mod | Version | Description |
 | --- | --- | --- |
-| VillageModLoader | v1.0.0 | Injection framework: auto-loads every `Mods\*\*.dll` on game launch |
+| VillageModLoader | v1.0.1 | Injection framework: auto-loads every `Mods\*\*.dll` on game launch; built-in crash log |
 | Teleport | v2.1.0 | Teleport menu (keyboard and gamepad builds), unlock tracking |
 | CameraZoom | v1.1.0 | Adjustable camera zoom (3 levels) |
 | MineHelper | v1.0.0 | Mine helper (floor / stone counter / fast-hole mode) |
@@ -55,6 +55,9 @@ toggles, etc.).
 - Mods such as MineHelper and CameraZoom modify game memory and restore
   everything when the game exits.
 - Back up your saves regularly.
+- If the game crashes, VillageModLoader writes `crash.log` in the game root
+  with the exception code, faulting module+offset, registers and stack, which
+  helps identify which mod crashed.
 
 ## License
 
