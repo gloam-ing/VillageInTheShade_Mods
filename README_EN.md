@@ -18,7 +18,6 @@ built on the `VillageModLoader` DLL-injection framework.
 | VillageModLoader | v1.0.0 | Injection framework: auto-loads every `Mods\*\*.dll` on game launch |
 | Teleport | v2.1.0 | Teleport menu (keyboard and gamepad builds), unlock tracking |
 | CameraZoom | v1.1.0 | Adjustable camera zoom (3 levels) |
-| ObjectMove | v0.8.x | Move objects (Alt + LMB to pick up, LMB to place, Move It style); in development |
 | MineHelper | v1.0.0 | Mine helper (floor / stone counter / fast-hole mode) |
 | AutoPet | v0.2.0 | Daily auto-petting for livestock & pets, affinity multiplier |
 | BirthdayReminder | v0.1.0 | Reminds you of today's birthday villager and their loved gifts |
