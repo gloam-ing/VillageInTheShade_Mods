@@ -23,6 +23,10 @@ built on the `VillageModLoader` DLL-injection framework.
 | BirthdayReminder | v0.1.0 | Reminds you of today's birthday villager and their loved gifts |
 | HuntOneShot | v0.1.1 | One-shot hunting kills |
 | TimeFreeze | v0.1.0 | Freeze time during the late night |
+| Simplified Chinese Patch | v1.0.0 | Converts Traditional Chinese texts to Simplified (~54k entries); requires replacing game `data.dat` |
+
+> The patch file (data.dat, ~350 MB) exceeds the repository single-file limit;
+> download it from the **Releases** page.
 
 ## Installation
 
