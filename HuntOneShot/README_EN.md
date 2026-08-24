@@ -1,30 +1,57 @@
-# One-Shot Hunt (HuntOneShot v0.1.2)
+# One-Shot Hunt (HuntOneShot v0.1.3)
 
 > [中文版](README.md)
 
 ## Features
 
-- All huntable animals (squirrel, wild boar, weasel, rabbit, deer, fox,
-  raccoon dog, bear, green pheasant) can be hunted successfully with
+- Huntable animals (squirrel, raccoon dog, weasel, rabbit, fox, green
+  pheasant, wild boar, deer, bear) can be hunted successfully with
   **a single shot**.
 - Does not affect drops or hunting settlement; animals still flee/disappear
   normally.
 
-## v0.1.2 Fixes
+## Matching Method & Limitations (v0.1.3)
 
-- **Precise prey matching**: only real prey are handled (+8 is a multiple of
-  10 in 11–200, and +0x20 is the animal sub-vtable 0xE49D18).
-- **Fixed stamina not recovering after sleep**: no longer touches non-prey /
+- Matching is done with an **initial hit-count whitelist**:
+  `{30, 40, 50, 150, 200, 500}` (squirrel 30 / raccoon dog·weasel·rabbit 40 /
+  fox·green pheasant 50 / wild boar 150 / deer 200 / bear 500).
+- **Why not match by animal name**: after an exhaustive search of the game
+  memory (instance body, sub-objects, container, pool nodes, spawn data,
+  templates), **no readable species name/ID exists on animal instances**;
+  the species is presumably resolved from templates at spawn time, and only
+  numeric copies remain on the instance. Therefore name-level matching is
+  not possible and the value whitelist is used instead.
+- **Known limitation**: the Wild Boar Lord / Deer Lord share the same values
+  (150 / 200) as their normal counterparts and cannot be distinguished by
+  value, so they will also be one-shot. The Bear Lord (600) is not in the
+  whitelist and keeps its challenge.
+
+## Changelog
+
+### v0.1.3 (current)
+
+- Matching changed from a range to an **initial hit-count whitelist**
+  `{30, 40, 50, 150, 200, 500}`, explicitly covering the bear (500).
+- Notes that no species name/ID can be found in animal instance memory, so
+  name-level matching is not possible.
+- Wild Boar Lord / Deer Lord share 150 / 200 with normal animals and will be
+  one-shot as well; Bear Lord (600) is not whitelisted and is preserved.
+
+### v0.1.2
+
+- Precise prey matching: +8 is a multiple of 10 in 11–200 and +0x20 is the
+  animal sub-vtable.
+- Fixed stamina not recovering after sleep: no longer touches non-prey /
   status objects sharing the vtable (giant rabbit, whelk, treasure box, etc.
-  have +8 = 0/1 and were previously clamped to 10, breaking stamina
-  settlement).
-- The three "Lords" — Bear Lord, Deer Lord, Wild Boar Lord (HP > 200) —
-  keep their challenge and are not one-shot.
+  have +8 = 0/1).
+- Note: that version matched by range; in practice only the bear (500) and
+  above were excluded, while Wild Boar Lord / Deer Lord (150 / 200, same as
+  normal) were still one-shot.
 
 ## Installation
 
 1. Close the game.
-2. Put the `HuntOneShot_v0.1.2` folder into the `Mods` folder in the game root.
+2. Put the `HuntOneShot_v0.1.3` folder into the `Mods` folder in the game root.
 3. Launch the game via `VillageModLoader.exe` (set it as a Steam launch option).
 
 > Only compatible with the same game version (village.exe 18,108,416 bytes).
@@ -32,6 +59,6 @@
 
 ## Uninstallation
 
-Delete the `Mods\HuntOneShot_v0.1.2` folder.
+Delete the `Mods\HuntOneShot_v0.1.3` folder.
 
 Author: gloaming. Please credit the source when re-sharing.
