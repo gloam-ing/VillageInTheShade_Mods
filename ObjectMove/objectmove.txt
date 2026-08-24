@@ -1,0 +1,10 @@
+; ObjectMove calibration (auto-managed; rewritten after each pick)
+; Model: sx = cx + ox + (wx-px)*zx, sy = cy + oy + yflip*(wy-py)*zy
+; CalibZoomX/Y: horizontal/vertical pixels per world unit
+; CalibYFlip: screen Y direction; CalibOX/OY: player screen offset (px)
+; Edits apply live (no restart needed).
+CalibZoomX=0.5600
+CalibZoomY=0.6900
+CalibYFlip=-1
+CalibOX=15.0
+CalibOY=-50.0

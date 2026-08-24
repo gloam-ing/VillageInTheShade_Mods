@@ -1,0 +1,21 @@
+# 本地文件
+*.log
+*.lib
+*.pdb
+
+# 开发目录
+mod_bak/
+Village_Save_Backups/
+.zig-cache/
+.zig-global/
+
+# 游戏数据（不要上传）
+data/
+data.dat
+*.systemsave
+save.*
+save.lst
+
+# 系统
+.DS_Store
+Thumbs.db

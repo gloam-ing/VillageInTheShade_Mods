@@ -1,0 +1,3 @@
+; AutoPet configuration (reloads automatically when changed)
+; GainMultiplier: affinity gain multiplier for auto-petting, default 1
+GainMultiplier=5

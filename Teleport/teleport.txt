@@ -1,0 +1,75 @@
+#Teleport Mod v2.1.0 配置（改完保存，重新进游戏生效）
+
+Enabled=1
+
+#---- 传送 ----
+#F8(键码119) 打开/关闭传送菜单；PageUp/PageDown 选择，[ ] 翻页，
+#Enter 传送，Esc 关闭
+#手柄：LB 菜单，RB 传送，←→ 选择，↓ 翻页，A 设置页
+Teleport=1
+TeleportKey=119
+
+#F7(键码118) 显示/隐藏玩家当前坐标（player pos now）
+HudKey=118
+
+#必须到访过目的地(300单位)才能传送；解锁记录由游戏内自动写入
+#（Unlock= 编码行，请勿手动修改/添加）
+UnlockRadius=300
+
+#调试：传送后扫描仍等于旧坐标的副本并写入日志（排查 QoL 镰刀收割掉帧用，0=关 1=开）
+DiagStalePos=0
+
+#目的地列表，坐标为世界坐标
+Dest1Name=农场
+Dest1X=12645
+Dest1Y=21825
+
+Dest2Name=村长宅邸
+Dest2X=17304
+Dest2Y=15062
+
+Dest3Name=图书馆
+Dest3X=17514
+Dest3Y=18064
+
+Dest4Name=杂货店
+Dest4X=16704
+Dest4Y=20647
+
+Dest5Name=树木建设
+Dest5X=15666
+Dest5Y=17990
+
+Dest6Name=猎人哨站
+Dest6X=12811
+Dest6Y=16213
+
+Dest7Name=岔路钓鱼点
+Dest7X=16875
+Dest7Y=22594
+
+Dest8Name=村中钓鱼点
+Dest8X=18724
+Dest8Y=21463
+
+Dest9Name=山中钓鱼点
+Dest9X=14535
+Dest9Y=13149
+
+Dest10Name=龙神渊
+Dest10X=22434
+Dest10Y=16311
+
+Dest11Name=采石场
+Dest11X=9560
+Dest11Y=18046
+
+Dest12Name=狩猎区
+Dest12X=10539
+Dest12Y=14300
+
+Dest13Name=墓地
+Dest13X=6659
+Dest13Y=12745
+
+#以下内容自动写入，请勿修改（Unlock= 解锁记录、各键位修改）

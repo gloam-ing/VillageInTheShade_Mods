@@ -1,0 +1,5 @@
+# MineHelper config (changes apply immediately, from next floor)
+#
+# FirstHole: 1 = first stone breaks the hole (ignore range rules)
+#            0 = use range rules below (default)
+FirstHole=0
