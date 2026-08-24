@@ -14,6 +14,7 @@ Village_Save_Backups/
 .zig-global/
 .vscode/
 .idea/
+release_build/
 
 # ---- Mods not yet published ----
 ObjectMove/
