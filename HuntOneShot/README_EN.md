@@ -1,4 +1,4 @@
-# One-Shot Hunt (HuntOneShot v0.1.3)
+# One-Shot Hunt (HuntOneShot v0.1.4)
 
 > [中文版](README.md)
 
@@ -10,9 +10,10 @@
 - Does not affect drops or hunting settlement; animals still flee/disappear
   normally.
 
-## Matching Method & Limitations (v0.1.3)
+## Matching Method & Limitations (v0.1.4)
 
-- Matching is done with an **initial hit-count whitelist**:
+- Matching is done with an **initial hit-count whitelist** (based on the
+  initial value at instance +0x10 high 32 bits, not the current +8):
   `{30, 40, 50, 150, 200, 500}` (squirrel 30 / raccoon dog·weasel·rabbit 40 /
   fox·green pheasant 50 / wild boar 150 / deer 200 / bear 500).
 - **Why not match by animal name**: after an exhaustive search of the game
@@ -28,7 +29,15 @@
 
 ## Changelog
 
-### v0.1.3 (current)
+### v0.1.4 (current)
+
+- **Fixed Bear Lord being one-shot by mistake**: matching now uses the
+  **initial hit count** (instance +0x10 high 32 bits, unchanged during
+  combat) instead of the current +8. Previously the Bear Lord (initial 600)
+  was one-shot when its +8 dropped to 500 and hit the whitelist; now its
+  initial value 600 is not whitelisted and never triggers.
+
+### v0.1.3
 
 - Matching changed from a range to an **initial hit-count whitelist**
   `{30, 40, 50, 150, 200, 500}`, explicitly covering the bear (500).
@@ -51,7 +60,7 @@
 ## Installation
 
 1. Close the game.
-2. Put the `HuntOneShot_v0.1.3` folder into the `Mods` folder in the game root.
+2. Put the `HuntOneShot_v0.1.4` folder into the `Mods` folder in the game root.
 3. Launch the game via `VillageModLoader.exe` (set it as a Steam launch option).
 
 > Only compatible with the same game version (village.exe 18,108,416 bytes).
@@ -59,6 +68,6 @@
 
 ## Uninstallation
 
-Delete the `Mods\HuntOneShot_v0.1.3` folder.
+Delete the `Mods\HuntOneShot_v0.1.4` folder.
 
 Author: gloaming. Please credit the source when re-sharing.
