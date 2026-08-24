@@ -1,24 +1,32 @@
-# 本地文件
+# ---- Runtime logs ----
 *.log
+
+# ---- Build artifacts (binaries in each mod folder are tracked on purpose) ----
 *.lib
 *.pdb
+*.obj
+*.o
 
-# 开发目录
+# ---- Local development / backup folders ----
 mod_bak/
 Village_Save_Backups/
 .zig-cache/
 .zig-global/
+.vscode/
+.idea/
 
-# 暂不发布的 Mod
+# ---- Mods not yet published ----
 ObjectMove/
 
-# 游戏数据（不要上传）
+# ---- Game data & saves (never upload) ----
 data/
 data.dat
 *.systemsave
 save.*
 save.lst
 
-# 系统
+# ---- OS / editor junk ----
 .DS_Store
 Thumbs.db
+desktop.ini
+*~
