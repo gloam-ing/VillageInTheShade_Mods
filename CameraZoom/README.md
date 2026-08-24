@@ -1,5 +1,7 @@
 # Village in the Shade - 相机视角 Mod（Camera Zoom Mod v1.1.0）
 
+> [English](README_EN.md)
+
 ## 更新日志
 
 ### v1.1.0

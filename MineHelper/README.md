@@ -1,5 +1,7 @@
 # Village in the Shade - 下矿助手（Mine Helper v1.0.0）
 
+> [English](README_EN.md)
+
 
 
 ## 功能

@@ -1,5 +1,7 @@
 # Village in the Shade - 地图传送 Mod（Teleport Mod v2.1.0）
 
+> [English](README_EN.md)
+
 ## 更新日志
 
 ### v2.1.0（2026-08-20）

@@ -1,5 +1,7 @@
 # Village in the Shade - 时间冻结（TimeFreeze v0.1.0）
 
+> [English](README_EN.md)
+
 ## 功能
 
 - 按 **F5** 冻结 / 恢复主世界时间。

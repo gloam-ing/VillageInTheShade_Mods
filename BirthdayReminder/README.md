@@ -1,5 +1,7 @@
 # Village in the Shade - 生日提醒（BirthdayReminder v0.1.0）
 
+> [English](README_EN.md)
+
 ## 功能
 
 - 每天在屏幕右上角显示今日过生日的村民，使用游戏同款字体
