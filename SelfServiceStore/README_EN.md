@@ -1,4 +1,4 @@
-# 24-Hour Self-Service Store (SelfServiceStore v0.1.3)
+# 24-Hour Self-Service Store (SelfServiceStore v0.1.4)
 
 > [中文版](README.md)
 
@@ -16,11 +16,14 @@
 - The **street vendor** is not included: Kianana disappears from the map
   after closing (NPC mechanism, not a door lock), which is outside this
   mod's scope.
+- **Deep night (AM 00:00-05:59): the mod auto-disables** - store doors
+  return to the game's original closed state; during the day it works as
+  before.
 
 ## Installation
 
 1. Close the game.
-2. Put the `SelfServiceStore_v0.1.3` folder into the `Mods` folder in the
+2. Put the `SelfServiceStore_v0.1.4` folder into the `Mods` folder in the
    game root.
 3. Launch the game via `VillageModLoader.exe` (set it as a Steam launch
    option).
@@ -30,6 +33,6 @@
 
 ## Uninstallation
 
-Delete the `Mods\SelfServiceStore_v0.1.3` folder.
+Delete the `Mods\SelfServiceStore_v0.1.4` folder.
 
 Author: gloaming. Please credit the source when re-sharing.
