@@ -16,7 +16,7 @@
 | VillageModLoader | v1.0.2 | 注入框架：启动游戏时自动加载 `Mods\*\*.dll`；内置崩溃日志（带模块名） |
 | Teleport | v2.1.2 | 传送菜单（键盘 + 手柄两个版本），解锁记录 |
 | CameraZoom | v1.1.0 | 相机三档缩放调节 |
-| SelfServiceStore | v0.1.5 | 杂货店/树木建设/猎人哨站/图书馆 24 小时自助营业（深夜强制关门） |
+| SelfServiceStore | v0.1.6 | 杂货店/树木建设/猎人哨站/图书馆 24 小时自助营业（深夜强制关门） |
 | MineHelper | v1.0.0 | 下矿助手（层数 / 石头计数 / 极速下矿） |
 | AutoPet | v0.2.0 | 每日自动抚摸家畜与宠物，好感倍率 |
 | BirthdayReminder | v0.1.0 | 当天生日村民 + 喜爱礼物提醒 |

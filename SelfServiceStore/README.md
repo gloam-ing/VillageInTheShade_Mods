@@ -1,4 +1,4 @@
-# 24小时自助商店（SelfServiceStore v0.1.5）
+# 24小时自助商店（SelfServiceStore v0.1.6）
 
 > [English](README_EN.md)
 
@@ -17,18 +17,18 @@
 - 不包含**街边小贩**：琪娜娜收摊后会从地图消失（NPC 机制，非门锁），
   不在本 mod 覆盖范围。
 
-- **深夜（AM 00:00~05:59）商店门强制恢复关闭**（含传送/地图切换场景）
+- **深夜（AM 00:00~05:59）失效**
 
 ## 安装
 
 1. 关闭游戏；
-2. 将 `SelfServiceStore_v0.1.5` 文件夹放入游戏根目录的 `Mods` 文件夹；
+2. 将 `SelfServiceStore_v0.1.6` 文件夹放入游戏根目录的 `Mods` 文件夹；
 3. 通过 `VillageModLoader.exe` 启动游戏（设为 Steam 启动项）。
 
 > 只适配相同游戏版本（village.exe 18,108,416 字节）。游戏更新后本 Mod 可能失效。
 
 ## 卸载
 
-删除 `Mods\SelfServiceStore_v0.1.5` 文件夹即可。
+删除 `Mods\SelfServiceStore_v0.1.6` 文件夹即可。
 
 作者：gloaming。转载或分享时请注明出处。

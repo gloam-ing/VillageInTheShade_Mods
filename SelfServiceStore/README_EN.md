@@ -1,4 +1,4 @@
-# 24-Hour Self-Service Store (SelfServiceStore v0.1.5)
+# 24-Hour Self-Service Store (SelfServiceStore v0.1.6)
 
 > [中文版](README.md)
 
@@ -23,7 +23,7 @@
 ## Installation
 
 1. Close the game.
-2. Put the `SelfServiceStore_v0.1.5` folder into the `Mods` folder in the
+2. Put the `SelfServiceStore_v0.1.6` folder into the `Mods` folder in the
    game root.
 3. Launch the game via `VillageModLoader.exe` (set it as a Steam launch
    option).
@@ -33,6 +33,6 @@
 
 ## Uninstallation
 
-Delete the `Mods\SelfServiceStore_v0.1.5` folder.
+Delete the `Mods\SelfServiceStore_v0.1.6` folder.
 
 Author: gloaming. Please credit the source when re-sharing.
