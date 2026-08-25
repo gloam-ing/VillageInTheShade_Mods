@@ -15,10 +15,10 @@ built on the `VillageModLoader` DLL-injection framework.
 
 | Mod | Version | Description |
 | --- | --- | --- |
-| VillageModLoader | v1.0.1 | Injection framework: auto-loads every `Mods\*\*.dll` on game launch; built-in crash log |
+| VillageModLoader | v1.0.2 | Injection framework: auto-loads every `Mods\*\*.dll` on game launch; built-in crash log (with module names) |
 | Teleport | v2.1.2 | Teleport menu (keyboard and gamepad builds), unlock tracking |
 | CameraZoom | v1.1.0 | Adjustable camera zoom (3 levels) |
-| SelfServiceStore | v0.1.4 | 24-hour self-service shopping at the general store / lumber & construction / hunter outpost / library (auto-disabled at deep night) |
+| SelfServiceStore | v0.1.5 | 24-hour self-service shopping at the general store / lumber & construction / hunter outpost / library (doors forcibly closed at deep night) |
 | MineHelper | v1.0.0 | Mine helper (floor / stone counter / fast-hole mode) |
 | AutoPet | v0.2.0 | Daily auto-petting for livestock & pets, affinity multiplier |
 | BirthdayReminder | v0.1.0 | Reminds you of today's birthday villager and their loved gifts |
