@@ -16,12 +16,13 @@ built on the `VillageModLoader` DLL-injection framework.
 | Mod | Version | Description |
 | --- | --- | --- |
 | VillageModLoader | v1.0.1 | Injection framework: auto-loads every `Mods\*\*.dll` on game launch; built-in crash log |
-| Teleport | v2.1.0 | Teleport menu (keyboard and gamepad builds), unlock tracking |
+| Teleport | v2.1.2 | Teleport menu (keyboard and gamepad builds), unlock tracking |
 | CameraZoom | v1.1.0 | Adjustable camera zoom (3 levels) |
+| SelfServiceStore | v0.1.3 | 24-hour self-service shopping at the general store / lumber & construction / hunter outpost / library |
 | MineHelper | v1.0.0 | Mine helper (floor / stone counter / fast-hole mode) |
 | AutoPet | v0.2.0 | Daily auto-petting for livestock & pets, affinity multiplier |
 | BirthdayReminder | v0.1.0 | Reminds you of today's birthday villager and their loved gifts |
-| HuntOneShot | v0.1.4 | One-shot hunting kills (initial hit-count whitelist matching) |
+| HuntOneShot | v0.1.5 | One-shot hunting kills (initial hit-count whitelist matching) |
 | TimeFreeze | v0.1.0 | Freeze time during the late night |
 | Simplified Chinese Patch | v1.0.0 | Converts Traditional Chinese texts to Simplified (~54k entries); requires replacing game `data.dat` |
 
@@ -32,13 +33,13 @@ built on the `VillageModLoader` DLL-injection framework.
 
 1. Close the game.
 2. Copy the mod folders you want (e.g. `Teleport`) into the `Mods` folder in
-   the game root. Also copy `VillageModLoader_v1.0.0.exe` (from the
+   the game root. Also copy `VillageModLoader_v1.0.1.exe` (from the
    `VillageModLoader` folder) into `Mods`.
 3. Launch the game using one of these methods:
    - **Steam launch options (recommended)**: game properties → Launch Options →
-     `"<game root>\Mods\VillageModLoader_v1.0.0.exe" & %command%`
+     `"<game root>\Mods\VillageModLoader_v1.0.1.exe" & %command%`
      (replace `<game root>` with your own path), then launch from Steam.
-   - **Manual**: double-click `VillageModLoader_v1.0.0.exe` first (keep the
+   - **Manual**: double-click `VillageModLoader_v1.0.1.exe` first (keep the
      window running), then launch the game from Steam.
 
 ## Configuration
@@ -55,7 +56,7 @@ toggles, etc.).
 - Mods such as MineHelper and CameraZoom modify game memory and restore
   everything when the game exits.
 - Back up your saves regularly.
-- If the game crashes, VillageModLoader writes `crash.log` in the game root
+- If the game crashes, VillageModLoader writes `mod_crash.log` in the game root
   with the exception code, faulting module+offset, registers and stack, which
   helps identify which mod crashed.
 

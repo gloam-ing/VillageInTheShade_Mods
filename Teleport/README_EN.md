@@ -1,8 +1,30 @@
-# Village in the Shade - Teleport Mod (v2.1.0)
+# Village in the Shade - Teleport Mod (v2.1.2)
 
 > [中文版](README.md)
 
 ## Changelog
+
+### v2.1.2 (2026-08-25)
+
+- Fixed keyboard input being completely unresponsive after opening the menu.
+- Default menu key changed to F6 (was F8); added `kbd hook installed/failed`
+  and `kbd key=%d down` log lines for troubleshooting.
+- Menu-open key swallowing (preventing in-game misoperation) is preserved.
+
+### v2.1.1 (2026-08-24)
+
+- Fixed a rare crash on teleport: no longer read-modify-write the whole
+  player object window; each coordinate copy pair is located and written
+  directly to avoid corrupting heap memory.
+- Player coordinate live copies (transform / physics) are located once and
+  cached; addresses are re-located only when invalidated, so a full-memory
+  scan is no longer needed on every teleport (also avoids overwriting other
+  entities).
+- The player object's main vtable is validated before teleporting to prevent
+  writes to freed / reused objects.
+- Relaxed cache validation (following the player is enough), delayed
+  re-location when needed, and all cached copies are unconditionally written
+  with the new target.
 
 ### v2.1.0 (2026-08-20)
 
@@ -84,14 +106,14 @@ option is recommended:
 Alternatively, run `Mods\VillageModLoader.exe` manually before launching the
 game from Steam.
 
-> If the loader isn't running, the mod won't work (pressing F8 in a save has
+> If the loader isn't running, the mod won't work (pressing F6 in a save has
 > no effect).
 
 ## Controls
 
 | Action | Keyboard | Gamepad |
 |--------|----------|---------|
-| Open / close menu | F8 | LB |
+| Open / close menu | F6 | LB |
 | Settings page | `、` | A |
 | Select | PgUp / PgDn | ← / → |
 | Page | [ / ] | ↓ |

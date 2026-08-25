@@ -3,11 +3,11 @@
 Enabled=1
 
 #---- 传送 ----
-#F8(键码119) 打开/关闭传送菜单；PageUp/PageDown 选择，[ ] 翻页，
+#F6(键码117) 打开/关闭传送菜单；PageUp/PageDown 选择，[ ] 翻页，
 #Enter 传送，Esc 关闭
 #手柄：LB 菜单，RB 传送，←→ 选择，↓ 翻页，A 设置页
 Teleport=1
-TeleportKey=119
+TeleportKey=117
 
 #F7(键码118) 显示/隐藏玩家当前坐标（player pos now）
 HudKey=118

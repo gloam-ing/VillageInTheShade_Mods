@@ -1,4 +1,4 @@
-# One-Shot Hunt (HuntOneShot v0.1.4)
+# One-Shot Hunt (HuntOneShot v0.1.5)
 
 > [中文版](README.md)
 
@@ -10,7 +10,7 @@
 - Does not affect drops or hunting settlement; animals still flee/disappear
   normally.
 
-## Matching Method & Limitations (v0.1.4)
+## Matching Method & Limitations (v0.1.5)
 
 - Matching is done with an **initial hit-count whitelist** (based on the
   initial value at instance +0x10 high 32 bits, not the current +8):
@@ -29,7 +29,14 @@
 
 ## Changelog
 
-### v0.1.4 (current)
+### v0.1.5
+
+- **Fixed a crash** (in the game's cleanup function): v0.1.4, after matching
+  by initial value, also clamped dead / reused objects whose current hit
+  count (+8) was 0 to 10, writing into freed memory. Now a `v > 0` check is
+  added and all zero-value objects are skipped.
+
+### v0.1.4
 
 - **Fixed Bear Lord being one-shot by mistake**: matching now uses the
   **initial hit count** (instance +0x10 high 32 bits, unchanged during
@@ -60,7 +67,7 @@
 ## Installation
 
 1. Close the game.
-2. Put the `HuntOneShot_v0.1.4` folder into the `Mods` folder in the game root.
+2. Put the `HuntOneShot_v0.1.5` folder into the `Mods` folder in the game root.
 3. Launch the game via `VillageModLoader.exe` (set it as a Steam launch option).
 
 > Only compatible with the same game version (village.exe 18,108,416 bytes).
@@ -68,6 +75,6 @@
 
 ## Uninstallation
 
-Delete the `Mods\HuntOneShot_v0.1.4` folder.
+Delete the `Mods\HuntOneShot_v0.1.5` folder.
 
 Author: gloaming. Please credit the source when re-sharing.
