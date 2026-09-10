@@ -1,0 +1,5 @@
+# AutoPet 配置（修改后保存，实时生效）
+
+# GainMultiplier：好感倍率（1~100）
+# 基础每天 +5 好感，乘以该倍率，上限 2000。默认 1。
+GainMultiplier=80

@@ -1,0 +1,101 @@
+#Teleport Mod v2.3.0 配置（改完保存，重新进游戏生效）
+
+Enabled=1
+
+#---- 传送 ----
+#F6(键码117) 打开/关闭传送菜单；PageUp/PageDown 选择，[ ] 翻页，
+#Enter 传送，Esc 关闭
+Teleport=1PadToggleKey=512PadToggleKey=128
+
+#按键配置（在游戏内修改后自动同步到此处）
+TeleportKey=117
+HudKey=118
+UpKey=33
+PadToggleKey=128
+
+#F7(键码118) 切换左上角HUD显示（默认隐藏，测试用）
+
+#Alt+F6(固定组合)：在小屋门口站定后手动开始定位；进档/跨日后需重新定位
+
+#HUD/菜单缩放（仅 SD 两个 DLL 生效）：0=按屏幕分辨率自动缩放
+#（Steam Deck 约 0.67），手动可设 0.4~2.0
+HudScale=0
+
+#必须到访过目的地(300单位)才能传送；解锁记录由游戏内自动写入
+#（Unlock= 编码行，请勿手动修改/添加）
+UnlockRadius=300
+
+#调试：传送后扫描仍等于旧坐标的副本并写入日志（排查 QoL 镰刀收割掉帧用，0=关 1=开）
+DiagStalePos=0
+
+#目的地列表，坐标为世界坐标
+Dest1Name=农场
+Dest1X=12645
+Dest1Y=21825
+
+Dest2Name=村长宅邸
+Dest2X=17304
+Dest2Y=15062
+
+Dest3Name=图书馆
+Dest3X=17514
+Dest3Y=18064
+
+Dest4Name=杂货店
+Dest4X=16704
+Dest4Y=20647
+
+Dest5Name=树木建设
+Dest5X=15666
+Dest5Y=17990
+
+Dest6Name=猎人哨站
+Dest6X=12811
+Dest6Y=16213
+
+Dest7Name=岔路钓鱼点
+Dest7X=16875
+Dest7Y=22594
+
+Dest8Name=村中钓鱼点
+Dest8X=18724
+Dest8Y=21463
+
+Dest9Name=山中钓鱼点
+Dest9X=14535
+Dest9Y=13149
+
+Dest10Name=龙神渊
+Dest10X=22434
+Dest10Y=16311
+
+Dest11Name=深山钓鱼点
+Dest11X=10083
+Dest11Y=8887
+
+Dest12Name=采石场
+Dest12X=9560
+Dest12Y=18046
+
+Dest13Name=温泉
+Dest13X=10751
+Dest13Y=12828
+
+Dest14Name=墓地
+Dest14X=6659
+Dest14Y=12745
+
+Dest15Name=山顶
+Dest15X=7982
+Dest15Y=6846
+
+Dest16Name=洞穴
+Dest16X=7256
+Dest16Y=25648
+
+Dest17Name=哔啰
+Dest17X=13505
+Dest17Y=11074
+
+#以下内容自动写入，请勿修改
+
