@@ -2,14 +2,29 @@
 
 > [English](README_EN.md)
 
-《静谧田园 / Village in the Shade》个人 Mod 集合，基于
-`VillageModLoader`（dll 注入框架）运行。
+《静谧田园 / Village in the Shade》个人 Mod 集合。**已停止维护（归档）。**
 
-> 本仓库只发布编译好的二进制（dll / exe），**不公开源码**。
-> 适用游戏版本：`1.06`（Steam build `24771274`，village.exe 18,108,416 字节）。
-> 游戏更新后各 Mod 可能失效。
+> 最后对齐的游戏版本：`1.08.1`（buildid `24969282`）。
+> `1.09` 及以后版本未适配、未验证。
+> 根目录的 Mod 文件夹与 `release_build/` 是 1.06 时代的二进制发布，已停止更新。
 
-## Mod 列表
+## 源码与加载方式
+
+源码在 [`Source/`](Source/)：10 个 Mod 的单文件 C 源码 + `shared/` 共享层
+（运行时地址签名解析、日志、内存、Hook 事务）。
+
+**不使用 `VillageModLoader.exe`**（那套启动项注入框架已废弃）。现在由游戏根目录的
+`steam_api64.dll` 桥接基座加载：
+
+- 转发 Steam 导出函数（原文件备份为 `steam_api64_org.dll`）
+- 递归加载 `Mods\*\*.dll`
+- 向各 Mod 分发 `mod_init` / `mod_tick`
+- 崩溃日志写游戏根目录 `mod_crash.log`
+
+安装：关闭游戏 → 备份原版 `steam_api64.dll` → 把基座 `steam_api64.dll` 放进游戏根目录
+→ 各 Mod 文件夹放进游戏根目录 `Mods\` → 从 Steam 正常启动（无需启动项）。
+
+## 历史版本（1.06 二进制，已停止更新）
 
 | Mod | 版本 | 功能 |
 | --- | --- | --- |
@@ -27,7 +42,7 @@
 > 简体中文补丁的补丁文件（data.dat，约 350MB）超过仓库单文件限制，
 > 请在 **Releases** 页面下载附件。
 
-## 安装
+## 旧版安装（已废弃：VillageModLoader 启动项）
 
 1. 关闭游戏；
 2. 把要用的 Mod 文件夹（如 `Teleport`）放进游戏根目录的 `Mods` 文件夹；

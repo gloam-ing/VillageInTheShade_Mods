@@ -2,16 +2,34 @@
 
 > [中文版](README.md)
 
-A collection of personal mods for *Village in the Shade* (静谧田园 / ほのぐらしの庭),
-built on the `VillageModLoader` DLL-injection framework.
+A collection of personal mods for *Village in the Shade* (静谧田园 / ほのぐらしの庭).
+**Unmaintained (archived).**
 
-> This repository ships **compiled binaries only** (dll / exe). Source code is
-> not public.
->
-> Compatible with game version `1.06` (Steam build `24771274`,
-> village.exe 18,108,416 bytes). Mods may stop working after game updates.
+> Last aligned game version: `1.08.1` (buildid `24969282`).
+> Versions `1.09` and later are not adapted and not verified.
+> The mod folders and `release_build/` in the repository root are the 1.06-era
+> binary releases and are no longer updated.
 
-## Mod List
+## Source and loading
+
+The source lives in [`Source/`](Source/): single-file C source for 10 mods plus
+the `shared/` layer (runtime signature-based address resolution, logging, memory,
+hook transactions).
+
+**`VillageModLoader.exe` is no longer used** (that launch-option injection
+framework is obsolete). Mods are now loaded by the `steam_api64.dll` bridge in
+the game root:
+
+- forwards the Steam exports (the original file is kept as `steam_api64_org.dll`)
+- recursively loads `Mods\*\*.dll`
+- dispatches `mod_init` / `mod_tick` to each mod
+- writes crash logs to `mod_crash.log` in the game root
+
+Install: close the game → back up the original `steam_api64.dll` → put the bridge
+`steam_api64.dll` into the game root → put each mod folder into `Mods\` → launch
+normally from Steam (no launch options needed).
+
+## Legacy versions (1.06 binaries, no longer updated)
 
 | Mod | Version | Description |
 | --- | --- | --- |
@@ -29,7 +47,7 @@ built on the `VillageModLoader` DLL-injection framework.
 > The patch file (data.dat, ~350 MB) exceeds the repository single-file limit;
 > download it from the **Releases** page.
 
-## Installation
+## Legacy installation (obsolete: VillageModLoader launch option)
 
 1. Close the game.
 2. Copy the mod folders you want (e.g. `Teleport`) into the `Mods` folder in
